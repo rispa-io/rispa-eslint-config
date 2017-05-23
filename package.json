@@ -1,6 +1,4 @@
 {
-  "rispa:plugin": true,
-  "rispa:name": "eslint-config",
   "name": "@rispa/eslint-config",
   "version": "0.1.0",
   "description": "rispa linter plugin",
