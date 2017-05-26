@@ -14,9 +14,10 @@ if (!fs.existsSync(eslintrcPath)) {
   process.exit(1)
 }
 
+const eslint = require.resolve('eslint/bin/eslint')
+
 const args = [
-  'eslint',
-  '--',
+  eslint,
   '-c',
   eslintrcPath,
   '--ignore-pattern',
@@ -31,11 +32,13 @@ if (fs.existsSync(eslintignorePath)) {
   args.push(eslintignorePath)
 }
 
-spawn(
-  'yarn',
+const res = spawn.sync(
+  'node',
   args,
   {
-    cwd: path.resolve(__dirname, '../'),
+    cwd: currentDir,
     stdio: 'inherit',
   }
 )
+
+process.exit(res.status)
