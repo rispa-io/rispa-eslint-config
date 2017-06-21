@@ -21,7 +21,7 @@ const args = [
   '-c',
   eslintrcPath,
   '--ignore-pattern',
-  'node_modules',
+  '!.*',
   currentDir,
   ...argv
 ]
