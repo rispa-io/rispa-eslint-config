@@ -1,6 +1,6 @@
 {
   "name": "@rispa/eslint-config",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "rispa linter plugin",
   "license": "MIT",
   "main": "index.js",
