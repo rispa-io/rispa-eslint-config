@@ -7,7 +7,7 @@ const eslint = require.resolve('eslint/bin/eslint')
 
 const res = spawn.sync(
   'node',
-  [eslint, '--ignore-pattern', '!.rispa', ...args],
+  [eslint, '--ignore-pattern', 'lib', ...args],
   {
     cwd,
     stdio: 'inherit',

@@ -14,10 +14,12 @@ module.exports = {
   rules: {
     complexity: ['error', 4],
     semi: ['error', 'never'],
+    'global-require': 'error',
     'no-unused-vars': 'error',
     'no-case-declarations': 0,
     'no-param-reassign': ['error', { props: false }],
     'comma-dangle': ['error', 'always-multiline'],
+    'object-curly-spacing': ['error', 'always'],
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
     'no-underscore-dangle':
     ['error', { allowAfterThis: false, allow: ['__', '__data', '__html'] }],
